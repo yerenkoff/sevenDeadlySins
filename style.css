@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background: url("bgblur.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  margin: 50px 0;
+  color: gold;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: default;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+h1:hover {
+  -webkit-transform: scale(1.05) rotate(-2deg);
+          transform: scale(1.05) rotate(-2deg);
+}
+
+h1:hover::after {
+  top: 5px;
+  left: 5px;
+}
+
+h1:hover::before {
+  top: -5px;
+  left: -5px;
+}
+
+h1::after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+  content: "Seven Deadly Sins Clicker!";
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: brown;
+}
+
+h1::before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+  content: "Seven Deadly Sins Clicker!";
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  color: white;
+}
+
+h2, h5 {
+  font-family: 'Kaushan Script', cursive;
+  margin: 10px 0;
+  color: gold;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+h2:hover, h5:hover {
+  -webkit-transform: scale(1.05) rotate(-2deg);
+          transform: scale(1.05) rotate(-2deg);
+}
+
+#hawk {
+  display: block;
+  margin: auto;
+  width: 250px;
+  -webkit-filter: drop-shadow(0 0 40px #ffff00);
+          filter: drop-shadow(0 0 40px #ffff00);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#hawk:hover {
+  -webkit-filter: drop-shadow(0 0 80px #fff);
+          filter: drop-shadow(0 0 80px #fff);
+  -webkit-transform: translateY(-5px) scale(1.05);
+          transform: translateY(-5px) scale(1.05);
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+
+.modal img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 100px auto 0;
+  width: 50%;
+  height: 50%;
+  max-height: 500px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.modal h3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: gold;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 10px 40px;
+  max-width: 40%;
+}
+
+.modal h4 {
+  font-family: 'Kaushan Script', cursive;
+  border: 1px solid #444;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 40px;
+  color: #444;
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  top: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal h4:hover {
+  background: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=style.css.map */
